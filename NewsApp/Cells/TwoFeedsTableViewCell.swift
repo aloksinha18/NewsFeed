@@ -167,13 +167,14 @@ class TwoFeedsTableViewCell: UITableViewCell {
             firstFeedIconImageView.isHidden = true
         }
         
-        
         if let secondFeedImageURL =  URL(string: viewModel.secondArticle.urlToImage ?? "")  {
             viewModel.loadImage(url: secondFeedImageURL) { image in
                 DispatchQueue.main.async { [weak self] in
                     self?.secondFeedIconImageView.image = image
                 }
             }
+        } else {
+            secondFeedIconImageView.isHidden = true
         }
     }
 }

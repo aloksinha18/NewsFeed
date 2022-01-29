@@ -18,7 +18,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         
         let loader = RemoteFeedLoader(client: URLSessionHTTPClient(session: URLSession.shared), url: Endpoint.country("nl").url!)
-        print(Endpoint.country("nl").url!)
         let imageDataLoader = RemoteFeedImageDataLoader(client:  URLSessionHTTPClient(session: URLSession.shared))
         let controller = composer.feedViewcontroller(feedLoader: loader, imageLoader: imageDataLoader)
         window?.rootViewController = controller
