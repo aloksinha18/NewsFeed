@@ -36,7 +36,7 @@ enum Endpoint {
             queryItems.append(URLQueryItem(name: "country", value: code))
         }
         
-        queryItems.append(URLQueryItem(name: "apiKey", value: "bdc338f69bb84a38a6bf3f22f21585f8"))
+        queryItems.append(URLQueryItem(name: "apiKey", value: "INCLUDE_API_KEY"))
         return queryItems
     }
 }
