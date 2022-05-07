@@ -3,7 +3,7 @@
 This application represents news Feeds from API.
 
 
-More information on Berlin clock can be found [here](https://newsapi.org/s/netherlands-news-api)
+More information can be found [here](https://newsapi.org/s/netherlands-news-api)
 
 ## About the project
 This is a `xcode project` application.
